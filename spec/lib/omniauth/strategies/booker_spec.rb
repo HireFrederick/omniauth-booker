@@ -71,7 +71,7 @@ describe OmniAuth::Strategies::Booker do
 
     before do
       expect(booker).to receive(:access_token).and_return(access_token)
-      expect(JWT).to receive(:decode).with(jwt_token, nil, false).and_return [raw_info]
+      expect(JWT).to receive(:decode).with(jwt_token, nil, false, verify_not_before: false).and_return [raw_info]
     end
 
     it 'parses raw_info from the JWT token' do

@@ -26,7 +26,7 @@ module OmniAuth
       end
 
       def raw_info
-        @raw_info ||= JWT.decode(access_token.token, nil, false)[0]
+        @raw_info ||= JWT.decode(access_token.token, nil, false, verify_not_before: false)[0]
       end
     end
   end
