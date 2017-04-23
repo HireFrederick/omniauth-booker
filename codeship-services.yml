@@ -1,0 +1,5 @@
+main:
+  build:
+    image: omniauth-booker
+    dockerfile: Dockerfile
+  cached: true

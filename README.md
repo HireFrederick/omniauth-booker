@@ -1,6 +1,8 @@
 # Omniauth::Booker
 
-* An omniauth strategy for Booker
+An omniauth strategy for Booker
+
+[ ![Codeship Status for HireFrederick/omniauth-booker](https://app.codeship.com/projects/4424f860-b286-0134-fd6c-36318fdc3c23/status?branch=master)](https://app.codeship.com/projects/193313)
 
 ## Usage
 
